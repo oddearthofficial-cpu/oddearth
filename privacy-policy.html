@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — OddEarth Pipeline</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0d0d0d;
+      color: #e8e8e8;
+      line-height: 1.75;
+      padding: 40px 20px 80px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #1a1a1a;
+      border: 1px solid #2e2e2e;
+      border-radius: 12px;
+      padding: 48px 56px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: #FFD700;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .brand-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFD700;
+      letter-spacing: 0.5px;
+    }
+    .brand-sub {
+      font-size: 13px;
+      color: #888;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .last-updated {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #FFD700;
+      margin: 36px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #2e2e2e;
+    }
+    p {
+      font-size: 15px;
+      color: #ccc;
+      margin-bottom: 14px;
+    }
+    ul {
+      margin: 10px 0 14px 24px;
+    }
+    li {
+      font-size: 15px;
+      color: #ccc;
+      margin-bottom: 6px;
+    }
+    a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .contact-box {
+      background: #111;
+      border: 1px solid #2e2e2e;
+      border-left: 4px solid #FFD700;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-top: 40px;
+    }
+    .contact-box p { margin-bottom: 4px; }
+    .contact-box strong { color: #fff; }
+    @media (max-width: 600px) {
+      .container { padding: 32px 24px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">
+      <div class="brand-icon">🌍</div>
+      <div>
+        <div class="brand-name">OddEarth Pipeline</div>
+        <div class="brand-sub">Content Automation Tool</div>
+      </div>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: April 1, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>
+      This Privacy Policy describes how <strong>OddEarth Pipeline</strong> ("we", "our", or "the app")
+      handles information when you use our content automation tool. OddEarth Pipeline is a private
+      automation system used exclusively to manage and publish content to the OddEarth social media
+      channels on YouTube, TikTok, and Instagram.
+    </p>
+
+    <h2>2. Information We Access</h2>
+    <p>To perform automated uploads, OddEarth Pipeline accesses the following:</p>
+    <ul>
+      <li><strong>YouTube:</strong> OAuth 2.0 credentials (access token and refresh token) to upload videos, set thumbnails, and post comments on the OddEarth YouTube channel.</li>
+      <li><strong>TikTok:</strong> OAuth 2.0 access credentials to publish short-form video content to the OddEarth TikTok account.</li>
+      <li><strong>Instagram (Meta):</strong> OAuth 2.0 access credentials via the Instagram Graph API to publish Reels to the OddEarth Instagram account.</li>
+    </ul>
+    <p>
+      These credentials are stored locally on the server operating the pipeline and are never transmitted
+      to any third-party service, database, or analytics platform.
+    </p>
+
+    <h2>3. How We Use This Information</h2>
+    <p>The credentials and account access listed above are used solely for the following purposes:</p>
+    <ul>
+      <li>Automatically uploading generated video content to the designated social media accounts.</li>
+      <li>Setting video metadata (titles, descriptions, tags, thumbnails).</li>
+      <li>Posting pinned comments on uploaded videos.</li>
+      <li>Monitoring upload status and quota usage.</li>
+    </ul>
+    <p>
+      We do not use this access for advertising, analytics, data brokering, or any purpose
+      beyond direct content publishing on behalf of the OddEarth channel owner.
+    </p>
+
+    <h2>4. Data Storage and Security</h2>
+    <p>
+      Authentication tokens are stored locally in configuration files on the private server
+      running OddEarth Pipeline. These files are not exposed to the public internet. We
+      use environment variables and restricted file permissions to protect sensitive credentials.
+    </p>
+    <p>
+      No user data, viewer information, or analytics data is collected, stored, or processed
+      by OddEarth Pipeline.
+    </p>
+
+    <h2>5. Data Sharing</h2>
+    <p>
+      We do not sell, trade, rent, or otherwise share any credentials, account data, or
+      personal information with any third parties. All API interactions occur directly
+      between our private server and the respective platform APIs (Google/YouTube, TikTok,
+      Meta/Instagram).
+    </p>
+
+    <h2>6. Third-Party Services</h2>
+    <p>OddEarth Pipeline interacts with the following third-party APIs:</p>
+    <ul>
+      <li><strong>Google / YouTube Data API v3</strong> — for video uploads and channel management.</li>
+      <li><strong>TikTok Content Posting API</strong> — for publishing short-form video content.</li>
+      <li><strong>Meta Instagram Graph API</strong> — for publishing Instagram Reels.</li>
+      <li><strong>ElevenLabs API</strong> — for AI voice generation (no personal data is sent).</li>
+      <li><strong>Pexels API</strong> — for royalty-free stock footage downloads (no personal data is sent).</li>
+      <li><strong>Anthropic API</strong> — for AI script generation (no personal data is sent).</li>
+    </ul>
+    <p>
+      Each of these services is governed by their own privacy policies. OddEarth Pipeline
+      only transmits content assets and metadata required for publishing.
+    </p>
+
+    <h2>7. Data Retention</h2>
+    <p>
+      Authentication tokens are retained locally as long as the OddEarth Pipeline system
+      is operational. Tokens can be revoked at any time by the channel owner via the
+      respective platform's account settings. Upon revocation, the pipeline ceases to
+      function until re-authenticated.
+    </p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+      OddEarth Pipeline is a private tool operated by the channel owner and is not directed
+      at or accessible to children. We do not knowingly collect any information from minors.
+    </p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy periodically. Any changes will be reflected with
+      an updated "Last updated" date at the top of this page.
+    </p>
+
+    <h2>10. Contact Us</h2>
+    <div class="contact-box">
+      <p><strong>OddEarth Pipeline</strong></p>
+      <p>Questions about this Privacy Policy? Contact us at:</p>
+      <p><a href="mailto:oddearth.official@gmail.com">oddearth.official@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
